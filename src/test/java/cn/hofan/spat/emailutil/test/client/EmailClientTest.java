@@ -31,7 +31,7 @@ public class EmailClientTest {
 
     @Before
     public void before(){
-        connection.setAuth(new PasswordAuthentication("geniuslizhao@gmail.com","19880411"));
+        connection.setAuth(new PasswordAuthentication("c.onlinecs@gmail.com","na6e/r46fef**"));
         connection.setImapHost("imap.gmail.com");
         connection.setImapPort(993);
         connection.setUseSslSend(true);
