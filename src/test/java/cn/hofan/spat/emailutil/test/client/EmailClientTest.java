@@ -14,6 +14,7 @@ import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.search.ComparisonTerm;
 import javax.mail.search.ReceivedDateTerm;
+import javax.mail.search.SentDateTerm;
 import java.sql.Date;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
@@ -48,10 +49,25 @@ public class EmailClientTest {
 
     }
 
+
     @Test
     public void testReceive() throws EmailException {
         List<EmailMessage> emails = client.receive(new ReceivedDateTerm(ComparisonTerm.GT, Date.from(Instant.now().plus(-3, ChronoUnit.DAYS))));
         System.out.println(emails);
+//        EmailConnection connection = new EmailConnection();
+//        // set connection ,such as email pwd proxy etc
+//        EmailClient client =  EmailClientImpl.instanseOf(connection);
+//        //receive email
+//        List<EmailMessage> receiveMsgs = client.receive(new SentDateTerm(ComparisonTerm.EQ, new java.util.Date()));
+//        //send email
+//        // set message,such subject context attachments etc
+//        EmailMessage message = new EmailMessage();
+//        client.send(message);
+//        //batch send
+//        EmailMessage message2 = new EmailMessage();
+//        // set message,such subject context attachments etc
+//        client.send(message,message2,...);
+
     }
 
     @Test

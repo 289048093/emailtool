@@ -2,8 +2,6 @@ package cn.hofan.email.emailutil.util;
 
 import cn.hofan.email.emailutil.EmailConnection;
 import cn.hofan.email.emailutil.Protocol;
-import cn.hofan.email.util.ConfigUtil;
-import jdk.nashorn.internal.runtime.regexp.joni.Config;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

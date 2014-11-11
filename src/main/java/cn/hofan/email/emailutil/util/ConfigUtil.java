@@ -15,7 +15,7 @@ import java.util.Properties;
  */
 
 public class ConfigUtil {
-    private final Logger log = LoggerFactory.getLogger(cn.hofan.email.util.ConfigUtil.class);
+    private final Logger log = LoggerFactory.getLogger(ConfigUtil.class);
 
     private Properties prop = null;
 
@@ -24,7 +24,7 @@ public class ConfigUtil {
 
     private ConfigUtil(String fileName) {
         prop = new Properties();
-        InputStream is = cn.hofan.email.util.ConfigUtil.class.getClassLoader().getResourceAsStream(fileName);
+        InputStream is = ConfigUtil.class.getClassLoader().getResourceAsStream(fileName);
         try {
             prop.load(is);
         } catch (IOException e) {
