@@ -1,4 +1,4 @@
-邮件收发系统：
+邮件收发系统：[![Build Status](https://api.travis-ci.org/289048093/emailtool.svg)](https://travis-ci.org/289048093/emailtool/settings)
 通过对javamail的再次封装实现高效方便地收发邮件，可群发，可网络代理，可方便的收发附件。
 
         EmailConnection connection = new EmailConnection();
