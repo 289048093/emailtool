@@ -4,11 +4,12 @@ jdk:
 os:
 - linux
 cache:
+  bundler: true
   apt: true
   directories:
   - $HOME/.m2
   - $HOME/.cache/pip
 script:
   - mvn test
- notifications:
+notifications:
   - lizhao@mokylin.com
