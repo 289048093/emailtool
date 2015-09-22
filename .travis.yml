@@ -1,0 +1,14 @@
+language: java
+jdk:
+- oraclejdk8
+os:
+- linux
+cache:
+  apt: true
+  directories:
+  - $HOME/.m2
+  - $HOME/.cache/pip
+script:
+  - mvn test
+ notifications:
+  - lizhao@mokylin.com
