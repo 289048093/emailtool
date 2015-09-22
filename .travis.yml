@@ -1,17 +1,17 @@
 language: java
 jdk:
-- oraclejdk8
+  - oraclejdk8
 os:
-- linux
+  - linux
 cache:
   bundler: true
   apt: true
   directories:
-  - $HOME/.m2
-  - $HOME/.cache/pip
+    - $HOME/.m2
+    - $HOME/.cache/pip
 script:
   - mvn -DskipTests=true package -Dmaven.javadoc.skip=true -B -V
 deploy:
-- mkdir .deploy
+
 notifications:
   - lizhao@mokylin.com
