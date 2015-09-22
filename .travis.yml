@@ -12,6 +12,6 @@ cache:
 script:
   - mvn -DskipTests=true package -Dmaven.javadoc.skip=true -B -V
 deploy:
-
+ - ls
 notifications:
   - lizhao@mokylin.com
