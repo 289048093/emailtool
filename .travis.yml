@@ -11,5 +11,7 @@ cache:
   - $HOME/.cache/pip
 script:
   - mvn -DskipTests=true package -Dmaven.javadoc.skip=true -B -V
+deploy:
+
 notifications:
   - lizhao@mokylin.com
